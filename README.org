@@ -3,6 +3,6 @@
 ** Octave Scripts
    These are preview scripts for use in GNU Octave/MATLAB. They are a precursor to the blender scripts, included as instructive examples and demonstration of the crochet workflow. A somewhat artistic rendering of a torus pattern is shown below, and its accompanying crochet realization may be seen in a collection of crochet objects.
    [[./Images/torus_crochet_concentric_20.png]]
-   [[./Crochet_Shapes.png]]
+   [[./Images/Crochet_Shapes.png]]
 ** crochet.py
    This script generates a surface mesh from a given from a parametric equations in three dimensions and modifies its edge loops to ensure that adjacent vertices on each edge loop are equidistant. The given equations generate an embedding of a torus, for example. Vertices of this mesh are sorted into vertex groups by their edge loops. Then for each edge loop (vertex group), an edge is formed from each vertex in that edge loop to the nearest vertex in each adjacent edge loop, by Euclidean distance. One may specify the desired aspect ratio of the stitch desired, in order to suit their particular materials and choice of stitch. A suitable diagram may then be obtained by UV-unwrapping the mesh, as shown for example here. [[./Images/projective_plane_UV_edge_loop.png]] Each edge loop in the UV-map then corresponds to a single crochet round. Notably, the edge loops of the embedded projective plane are self-intersecting, which is realized in a weaving pattern of crochet rounds.
